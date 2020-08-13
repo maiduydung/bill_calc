@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:test_app/services/auth.dart';
 
 class Register extends StatefulWidget {
+  final Function toggleView;
+  Register({this.toggleView});
+
   @override
   _RegisterState createState() => _RegisterState();
 }
@@ -21,6 +24,14 @@ class _RegisterState extends State<Register> {
         backgroundColor: Colors.blue[400],
         elevation: 0.0,
         title: Text('Register'),
+        actions: <Widget>[
+          FlatButton.icon(
+              onPressed: () {
+                widget.toggleView();
+              },
+              icon: Icon(Icons.person),
+              label: Text('Sign in'))
+        ],
       ),
       body: Container(
           padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 50.0),
