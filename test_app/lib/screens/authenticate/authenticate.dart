@@ -3,7 +3,6 @@ import 'package:test_app/screens/authenticate/register.dart';
 import 'package:test_app/screens/authenticate/sign_in.dart';
 
 import 'sign_in.dart';
-import 'sign_in.dart';
 
 class Authenticate extends StatefulWidget {
   @override
