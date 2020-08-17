@@ -1,2 +1,2 @@
 # bill_calc
-Made with Flutter and Firebase
+Calucating your household utilities bill.
