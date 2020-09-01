@@ -11,33 +11,42 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("What's up"),
+        title: Text(
+          "insert_name",
+          style: TextStyle(color: Colors.black38),
+        ),
         centerTitle: true,
-        backgroundColor: Colors.red[600],
+        backgroundColor: Colors.grey[200],
       ),
       body: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.end,
+        mainAxisAlignment: MainAxisAlignment.values[5],
         children: <Widget>[
-          Text('hi there'),
-          FlatButton(
+          IconButton(
+            icon: Icon(Icons.home),
             onPressed: null,
-            child: Text('Click me'),
-            color: Colors.deepOrange,
+            iconSize: 30.0,
           ),
-          Container(
-            color: Colors.cyan,
-            padding: EdgeInsets.all(20),
-            child: Text('within container'),
-          )
+          IconButton(
+            icon: Icon(Icons.insert_chart),
+            onPressed: null,
+            iconSize: 30.0,
+          ),
+          IconButton(
+            icon: Icon(Icons.flag),
+            onPressed: null,
+            iconSize: 30.0,
+          ),
+          IconButton(
+            icon: Icon(Icons.people),
+            onPressed: null,
+            iconSize: 30.0,
+          ),
+          IconButton(
+            icon: Icon(Icons.person_outline),
+            onPressed: null,
+            iconSize: 30.0,
+          ),
         ],
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          print("clicked");
-        },
-        child: Text("hit"),
-        backgroundColor: Colors.black12,
       ),
     );
   }
