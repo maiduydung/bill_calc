@@ -3,8 +3,13 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(
-    home: Scaffold(
+  runApp(MaterialApp(home: Home()));
+}
+
+class Home extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
       appBar: AppBar(
         title: Text("What's up"),
         centerTitle: true,
@@ -12,7 +17,7 @@ void main() {
       ),
       body: Center(
         child: Text(
-          'hello',
+          'hot reload',
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
@@ -27,6 +32,6 @@ void main() {
         child: Text("hit"),
         backgroundColor: Colors.black12,
       ),
-    ),
-  ));
+    );
+  }
 }
