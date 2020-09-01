@@ -15,18 +15,7 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body: Center(
-        child: Text(
-          'hot reload',
-          style: TextStyle(
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 2,
-            color: Colors.grey[600],
-            fontFamily: 'IndieFlower',
-          ),
-        ),
-      ),
+      body: Center(child: Image.asset('assets/stars.jpg')),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Text("hit"),
