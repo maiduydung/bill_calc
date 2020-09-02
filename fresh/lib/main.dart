@@ -7,7 +7,13 @@ void main() {
   runApp(MaterialApp(home: Home()));
 }
 
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
+  @override
+  _HomeState createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  int level = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,10 +25,25 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.grey[200],
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          setState(() {
+            level = level + 1;
+          });
+        },
+        child: Icon(
+          Icons.add,
+        ),
+        backgroundColor: Colors.red,
+      ),
       body: Column(
         children: <Widget>[
           Expanded(child: CarouselPage()),
           Expanded(child: NavigateBar()),
+          Text(
+            '$level',
+            style: TextStyle(color: Colors.black87),
+          ),
         ],
       ),
     );
@@ -91,5 +112,19 @@ class CarouselPage extends StatelessWidget {
             ],
           )),
     );
+  }
+}
+
+class Test extends StatefulWidget {
+  @override
+  _TestState createState() => _TestState();
+}
+
+class _TestState extends State<Test> {
+  int counter = 1;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
   }
 }
