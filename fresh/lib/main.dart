@@ -11,21 +11,21 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text(
-            "insert_name",
-            style: TextStyle(color: Colors.black38),
-          ),
-          centerTitle: true,
-          backgroundColor: Colors.grey[200],
+      appBar: AppBar(
+        title: Text(
+          "insert_name",
+          style: TextStyle(color: Colors.black38),
         ),
-        body: Column(
-          children: <Widget>[CarouselPage()],
-        )
-
-        //CarouselPage()
-
-        );
+        centerTitle: true,
+        backgroundColor: Colors.grey[200],
+      ),
+      body: Column(
+        children: <Widget>[
+          Expanded(child: CarouselPage()),
+          Expanded(child: NavigateBar()),
+        ],
+      ),
+    );
   }
 }
 
