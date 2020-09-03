@@ -25,25 +25,10 @@ class _HomeState extends State<Home> {
         centerTitle: true,
         backgroundColor: Colors.grey[200],
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          setState(() {
-            level = level + 1;
-          });
-        },
-        child: Icon(
-          Icons.add,
-        ),
-        backgroundColor: Colors.red,
-      ),
       body: Column(
         children: <Widget>[
           Expanded(child: CarouselPage()),
           Expanded(child: NavigateBar()),
-          Text(
-            '$level',
-            style: TextStyle(color: Colors.black87),
-          ),
         ],
       ),
     );
