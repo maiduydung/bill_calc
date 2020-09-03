@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
+import 'carousel.dart';
 
 void main() {
   runApp(MaterialApp(home: Home()));
@@ -25,12 +26,8 @@ class _HomeState extends State<Home> {
         centerTitle: true,
         backgroundColor: Colors.grey[200],
       ),
-      body: Column(
-        children: <Widget>[
-          Expanded(child: CarouselPage()),
-          Expanded(child: NavigateBar()),
-        ],
-      ),
+      body: CarouselWidget(),
+      backgroundColor: Colors.white,
     );
   }
 }
