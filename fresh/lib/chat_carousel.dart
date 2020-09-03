@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class CarouselWidget extends StatelessWidget {
-  Container myArticles(String imgVal, String heading, String subHeading) {
+class ChatCarousel extends StatelessWidget {
+  Container mychat(String imgVal, String heading, String subHeading) {
     return Container(
       //decoration: new BoxDecoration(color: Colors.transparent),
       width: 170.0,
@@ -26,19 +26,19 @@ class CarouselWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.symmetric(vertical: 20.0),
-      height: 180.0,
+      height: 130.0,
       child: ListView(
         scrollDirection: Axis.horizontal,
         children: <Widget>[
-          myArticles(
+          mychat(
               'https://images.unsplash.com/photo-1584143987552-0ab1f595af6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
               "Kitchen appliances",
               'Microwave oven, fridge, stove, etc'),
-          myArticles(
+          mychat(
               'https://images.unsplash.com/photo-1590756254933-2873d72a83b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
               "Air conditioner",
               'Random stuffs go here'),
-          myArticles(
+          mychat(
               'https://images.unsplash.com/photo-1593078165899-c7d2ac0d6aea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
               "TV",
               'Some more stuffs in here'),
