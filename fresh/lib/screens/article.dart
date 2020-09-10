@@ -4,17 +4,18 @@ class Article extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(80.0),
         child: AppBar(
           elevation: 0,
           automaticallyImplyLeading: false,
-          backgroundColor: Colors.grey[200],
+          backgroundColor: Colors.white,
           actions: <Widget>[
             new IconButton(
                 icon: new Icon(
                   Icons.close,
-                  color: Colors.grey[600],
+                  color: Colors.grey,
                   size: 30.0,
                 ),
                 onPressed: () => backToMainPage(context))
