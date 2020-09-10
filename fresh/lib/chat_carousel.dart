@@ -32,16 +32,16 @@ class ChatCarousel extends StatelessWidget {
         children: <Widget>[
           mychat(
               'https://images.unsplash.com/photo-1584143987552-0ab1f595af6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
-              "Kitchen appliances",
-              'Microwave oven, fridge, stove, etc'),
+              "",
+              ''),
           mychat(
               'https://images.unsplash.com/photo-1590756254933-2873d72a83b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
-              "Air conditioner",
-              'Random stuffs go here'),
+              "",
+              ''),
           mychat(
               'https://images.unsplash.com/photo-1593078165899-c7d2ac0d6aea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
-              "TV",
-              'Some more stuffs in here'),
+              "",
+              ''),
         ],
       ),
     );
