@@ -22,6 +22,7 @@ class _HomeState extends State<Home> {
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(80.0),
         child: AppBar(
+          elevation: 0,
           title: Text(
             "",
             style: TextStyle(color: Colors.black38),
