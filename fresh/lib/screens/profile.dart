@@ -46,16 +46,40 @@ class Profile extends StatelessWidget {
               ),
               Text(
                 'イ二アド',
-                style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold),
+              ),
+              SizedBox(
+                height: 20.0,
               ),
               //2 description lines below the avatar
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[
-                  Column(
-                    children: <Widget>[Text('data')],
+                  Text(
+                    '11位',
+                    style:
+                        TextStyle(fontWeight: FontWeight.bold, fontSize: 17.0),
                   ),
-                  Column(
-                    children: <Widget>[Text('data'), Text('data')],
+                  VerticalDivider(),
+                  Text(
+                    '14位',
+                    style:
+                        TextStyle(fontWeight: FontWeight.bold, fontSize: 17.0),
+                  )
+                ],
+              ),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  Text(
+                    '週間',
+                    style: TextStyle(color: Colors.yellow[700]),
+                  ),
+                  VerticalDivider(),
+                  Text(
+                    '月間',
+                    style: TextStyle(color: Colors.yellow[700]),
                   )
                 ],
               ),
