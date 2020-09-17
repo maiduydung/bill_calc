@@ -10,7 +10,7 @@ class Profile extends StatelessWidget {
         child: AppBar(
           elevation: 0,
           automaticallyImplyLeading: false,
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.yellow[700],
           actions: <Widget>[
             new IconButton(
                 icon: new Icon(
@@ -21,6 +21,21 @@ class Profile extends StatelessWidget {
                 onPressed: () => backToMainPage(context))
           ],
         ),
+      ),
+      body: Column(
+        children: <Widget>[
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Container(
+                child: CircleAvatar(
+                  radius: 60.0,
+                  backgroundImage: AssetImage('assets/face_1.jpg'),
+                ),
+              )
+            ],
+          )
+        ],
       ),
     );
   }
