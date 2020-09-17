@@ -50,7 +50,14 @@ class Profile extends StatelessWidget {
               ),
               //2 description lines below the avatar
               Row(
-                children: <Widget>[Text('data'), Text('data')],
+                children: <Widget>[
+                  Column(
+                    children: <Widget>[Text('data')],
+                  ),
+                  Column(
+                    children: <Widget>[Text('data'), Text('data')],
+                  )
+                ],
               ),
             ],
           ),
