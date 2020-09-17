@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'carousel.dart';
 import 'chat_carousel.dart';
+import 'screens/navigate_bar.dart';
 
 void main() {
   runApp(MaterialApp(home: Home()));
@@ -60,45 +61,6 @@ class _HomeState extends State<Home> {
       ),
       //bottomNavigationBar: NavigateBar(),
       backgroundColor: Colors.white,
-    );
-  }
-}
-
-class NavigateBar extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Align(
-      alignment: Alignment(0.2, 1),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.values[5],
-        children: <Widget>[
-          IconButton(
-            icon: Icon(Icons.home),
-            onPressed: null,
-            iconSize: 30.0,
-          ),
-          IconButton(
-            icon: Icon(Icons.insert_chart),
-            onPressed: null,
-            iconSize: 30.0,
-          ),
-          IconButton(
-            icon: Icon(Icons.flag),
-            onPressed: null,
-            iconSize: 30.0,
-          ),
-          IconButton(
-            icon: Icon(Icons.people),
-            onPressed: null,
-            iconSize: 30.0,
-          ),
-          IconButton(
-            icon: Icon(Icons.person_outline),
-            onPressed: null,
-            iconSize: 30.0,
-          ),
-        ],
-      ),
     );
   }
 }
