@@ -60,7 +60,6 @@ class Profile extends StatelessWidget {
                     style:
                         TextStyle(fontWeight: FontWeight.bold, fontSize: 17.0),
                   ),
-                  VerticalDivider(),
                   Text(
                     '14位',
                     style:
@@ -68,7 +67,6 @@ class Profile extends StatelessWidget {
                   )
                 ],
               ),
-
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[
@@ -76,13 +74,19 @@ class Profile extends StatelessWidget {
                     '週間',
                     style: TextStyle(color: Colors.yellow[700]),
                   ),
-                  VerticalDivider(),
                   Text(
                     '月間',
                     style: TextStyle(color: Colors.yellow[700]),
                   )
                 ],
               ),
+              Container(
+                margin: EdgeInsets.all(20.0),
+                alignment: Alignment.center,
+                child: Text(
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'),
+              ),
+              Divider(),
             ],
           ),
         ],
