@@ -6,7 +6,7 @@ class Profile extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(80.0),
+        preferredSize: Size.fromHeight(30.0),
         child: AppBar(
           elevation: 0,
           automaticallyImplyLeading: false,
@@ -25,7 +25,7 @@ class Profile extends StatelessWidget {
       body: Stack(
         children: <Widget>[
           new Container(
-            height: 50,
+            height: 80.0,
             color: Colors.amber,
           ),
           Row(
@@ -33,8 +33,12 @@ class Profile extends StatelessWidget {
             children: <Widget>[
               Container(
                 child: CircleAvatar(
-                  radius: 60.0,
-                  backgroundImage: AssetImage('assets/face_1.jpg'),
+                  radius: 80.0,
+                  backgroundColor: Colors.white,
+                  child: CircleAvatar(
+                    radius: 70.0,
+                    backgroundImage: AssetImage('assets/face_1.jpg'),
+                  ),
                 ),
               )
             ],
