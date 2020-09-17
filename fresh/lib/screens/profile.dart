@@ -22,8 +22,12 @@ class Profile extends StatelessWidget {
           ],
         ),
       ),
-      body: Column(
+      body: Stack(
         children: <Widget>[
+          new Container(
+            height: 50,
+            color: Colors.amber,
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
@@ -34,7 +38,7 @@ class Profile extends StatelessWidget {
                 ),
               )
             ],
-          )
+          ),
         ],
       ),
     );
